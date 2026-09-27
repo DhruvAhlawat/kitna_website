@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kitna: see where your money went</title>
+  <meta name="description" content="Drop in a bank or card statement and Kitna sorts every rupee into categories, right on your Android phone. Compare months, set budgets, find subscriptions. No account, fully offline.">
+  <link rel="canonical" href="https://kitna.datronapps.com/">
+  <meta name="theme-color" content="#F7F3EB">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/kitna.svg">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/kitna_512.png">
+  <link rel="apple-touch-icon" href="assets/icons/kitna_512.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kitna">
+  <meta property="og:title" content="Kitna: see where your money went">
+  <meta property="og:description" content="Bank statements and alerts in, a clear monthly spending picture out. Private, offline, made for Indian banks.">
+  <meta property="og:url" content="https://kitna.datronapps.com/">
+  <meta property="og:image" content="https://kitna.datronapps.com/assets/og_banner.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Devanagari:wght@500&family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Kitna",
+    "alternateName": "Kitna: spending insights",
+    "operatingSystem": "Android",
+    "applicationCategory": "FinanceApplication",
+    "description": "Turns Indian bank and card statements, UPI and bank alerts into a monthly spending picture. Everything stays on the phone.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
+    "publisher": { "@type": "Organization", "name": "Datron", "url": "https://datronapps.com" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top">
+    <a class="brand" href="./" aria-label="Kitna home">
+      <img src="assets/icons/kitna.svg" alt="" width="36" height="36">
+      <span class="brand-name">Kitna</span>
+      <span class="brand-hi" lang="hi">कितना</span>
+    </a>
+    <nav class="top-nav" aria-label="Main">
+      <a href="#ways">How it works</a>
+      <a href="#privacy">Privacy</a>
+      <a class="btn btn-small" href="https://play.google.com/store/apps/details?id=com.datron.budjet_spendtracker" data-play>Get the app</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero: the ring is the one bold thing on the page. -->
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>Kitna gaya?</h1>
+        <p class="lead">How much went, and where. Drop in a bank statement and Kitna sorts every rupee for you, right on your phone.</p>
+        <div class="cta-row">
+          <a class="btn play" href="https://play.google.com/store/apps/details?id=com.datron.budjet_spendtracker" data-play>
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4.2 2.4 13.6 12l-9.4 9.6a1.6 1.6 0 0 1-.7-1.4V3.8c0-.6.3-1.1.7-1.4Zm10.6 10.8 2.4 2.4-10.9 6.2 8.5-8.6Zm3.8-4.3 2.6 1.5c1 .6 1 2.1 0 2.7l-2.6 1.5-2.7-2.6 2.7-3.1ZM6.3 2.2l10.9 6.2-2.4 2.4-8.5-8.6Z"/></svg>
+            <span><small>Get it on</small>Google Play</span>
+          </a>
+          <p class="cta-note">Free. No account. Works offline.</p>
+        </div>
+      </div>
+
+      <figure class="ring-wrap">
+        <svg class="ring" id="ring" viewBox="-160 -160 320 320" role="group" aria-label="August spending by category. Select a slice to see its amount."></svg>
+        <div class="ring-centre" aria-live="polite">
+          <span class="rc-label" id="rc-label">August</span>
+          <span class="rc-amount" id="rc-amount">₹90,468</span>
+          <span class="rc-sub" id="rc-sub">spent</span>
+        </div>
+        <figcaption>A real month from the demo ledger. Tap a slice.</figcaption>
+      </figure>
+    </section>
+
+    <section class="ways" id="ways" aria-labelledby="ways-h">
+      <div class="section-head">
+        <h2 id="ways-h">Getting your spends in takes a minute</h2>
+        <p>Use whichever you have. They all end up in one ledger, with duplicates caught for you.</p>
+      </div>
+      <ul class="phones-row">
+        <li>
+          <div class="phone"><img src="assets/screenshots/import.webp" alt="Import sheet: Added 692 transactions, everything was categorised." width="515" height="1115" loading="lazy"></div>
+          <h3>Upload a statement</h3>
+          <p>PDF, Excel or CSV from your bank or card. Locked PDFs ask for the password once and never keep it.</p>
+        </li>
+        <li>
+          <div class="phone"><img src="assets/screenshots/alerts.webp" alt="Add data page with automatic bank alerts switched on." width="515" height="1115" loading="lazy"></div>
+          <h3>Let bank alerts flow in</h3>
+          <p>On Android, new UPI, bank and card alerts land in Kitna as they arrive. Nothing to type.</p>
+        </li>
+        <li>
+          <div class="phone"><img src="assets/screenshots/paste-sms.webp" alt="Three bank SMS pasted into the paste box." width="515" height="1115" loading="lazy"></div>
+          <h3>Paste a message</h3>
+          <p>Copy a bank SMS or a table from netbanking, paste it, and it is read like a statement.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="feature compare" aria-labelledby="compare-h">
+      <div class="feature-copy">
+        <h2 id="compare-h">Is this month normal?</h2>
+        <p>Put any month next to the one before it, or next to your usual. Every category shows what changed, in rupees and in percent.</p>
+        <p class="aside">Tap a row to see the payments behind it, side by side.</p>
+      </div>
+      <div class="feature-art duo">
+        <div class="phone"><img src="assets/screenshots/compare.webp" alt="Compare: August 2026 against July 2026, spend up 15 percent." width="515" height="1115" loading="lazy"></div>
+        <div class="phone offset"><img src="assets/screenshots/compare-row.webp" alt="Compare by category, travel and shopping up the most." width="515" height="1115" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="feature rules" aria-labelledby="rules-h">
+      <div class="feature-art">
+        <div class="phone"><img src="assets/screenshots/rule-editor.webp" alt="Add a rule: if merchant contains Uber India, file as Transport." width="515" height="1115" loading="lazy"></div>
+      </div>
+      <div class="feature-copy">
+        <h2 id="rules-h">Teach it once</h2>
+        <p>Tap a payment, say where it belongs, and every payment like it follows. Rules work like email filters.</p>
+        <div class="rule-demo" aria-label="Example rule">
+          <span class="rd-field">Merchant contains</span>
+          <code>swiggy/zomato</code>
+          <span class="rd-files">files to</span>
+          <span class="rd-cat"><i style="background:#FF6B4A"></i>Food &amp; dining</span>
+        </div>
+        <p class="aside">A slash means either word. Most payments are sorted before you ever see them.</p>
+      </div>
+    </section>
+
+    <section class="feature plan" aria-labelledby="plan-h">
+      <div class="feature-copy">
+        <h2 id="plan-h">Know what is safe to spend</h2>
+        <p>Budgets suggest themselves from your last three months. Subscriptions, rent and EMIs are found for you, with the next date they are due.</p>
+      </div>
+      <div class="feature-art duo">
+        <div class="phone"><img src="assets/screenshots/budgets.webp" alt="Budgets: safe to spend 2,187 rupees each day for the next 4 days." width="515" height="1115" loading="lazy"></div>
+        <div class="phone offset"><img src="assets/screenshots/recurring.webp" alt="Recurring payments: about 45,618 rupees a month across 7 active payments." width="515" height="1115" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="more" aria-labelledby="more-h">
+      <h2 id="more-h" class="visually-hidden">More in the app</h2>
+      <ul class="phones-row small">
+        <li>
+          <div class="phone"><img src="assets/screenshots/search.webp" alt="Search for swiggy: 84 matches." width="515" height="1115" loading="lazy"></div>
+          <p>Find any payment by name, category or amount.</p>
+        </li>
+        <li>
+          <div class="phone"><img src="assets/screenshots/historic.webp" alt="Historic analysis: mean monthly spend over 12 months." width="515" height="1115" loading="lazy"></div>
+          <p>A year of spending at a glance.</p>
+        </li>
+        <li>
+          <div class="phone"><img src="assets/screenshots/home-dark.webp" alt="Home screen in the dark theme." width="515" height="1115" loading="lazy"></div>
+          <p>Light or dark, following your phone.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="privacy" id="privacy" aria-labelledby="privacy-h">
+      <h2 id="privacy-h">Your statements never leave your phone</h2>
+      <ul class="facts">
+        <li><strong>No sign-up.</strong> There is no account to create.</li>
+        <li><strong>No servers.</strong> Nothing you add is uploaded, ever.</li>
+        <li><strong>Works offline.</strong> Even in flight mode.</li>
+        <li><strong>Yours to take.</strong> Export everything as a CSV any time.</li>
+      </ul>
+      <p class="privacy-link"><a href="privacy.html">Read the privacy policy</a></p>
+    </section>
+
+    <section class="banks" aria-labelledby="banks-h">
+      <h2 id="banks-h">Reads statements from</h2>
+      <ul class="bank-list">
+        <li>HDFC Bank</li><li>State Bank of India</li><li>ICICI Bank</li><li>Axis Bank</li><li>Kotak</li><li>HDFC credit cards</li><li>Neobank exports</li>
+      </ul>
+      <p class="aside">Missing yours? <a href="mailto:support@datronapps.com?subject=Kitna%20bank%20request">Tell us which bank</a> and we will add it.</p>
+    </section>
+
+    <section class="closing">
+      <h2>Find out where it went</h2>
+      <a class="btn play" href="https://play.google.com/store/apps/details?id=com.datron.budjet_spendtracker" data-play>
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4.2 2.4 13.6 12l-9.4 9.6a1.6 1.6 0 0 1-.7-1.4V3.8c0-.6.3-1.1.7-1.4Zm10.6 10.8 2.4 2.4-10.9 6.2 8.5-8.6Zm3.8-4.3 2.6 1.5c1 .6 1 2.1 0 2.7l-2.6 1.5-2.7-2.6 2.7-3.1ZM6.3 2.2l10.9 6.2-2.4 2.4-8.5-8.6Z"/></svg>
+        <span><small>Get it on</small>Google Play</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>Kitna is made by <a href="https://datronapps.com">Datron</a>. Also from us: <a href="https://pocketpad.datronapps.com">PocketPad</a> and <a href="https://foldervault.datronapps.com">Folder Vault</a>.</p>
+    <p><a href="privacy.html">Privacy</a> <a href="mailto:support@datronapps.com">support@datronapps.com</a></p>
+    <p class="fine">Screenshots use a made-up demo statement. Kitna is not affiliated with any bank.</p>
+  </footer>
+
+  <script src="ring.js" defer></script>
+</body>
+</html>

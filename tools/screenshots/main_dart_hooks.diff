@@ -1,0 +1,32 @@
+diff --git a/C:/Users/admin/Documents/Projects/transactions_analyzer/BudgetApp/lib/main.dart b/lib/main.dart
+index af80035..5ea76bc 100644
+--- a/C:/Users/admin/Documents/Projects/transactions_analyzer/BudgetApp/lib/main.dart
++++ b/lib/main.dart
+@@ -17,6 +17,11 @@ import 'ui/settings_page.dart';
+ import 'ui/upload_history_page.dart';
+ import 'ui/widgets/notification_access_disclosure.dart';
+ 
++
++/// Site screenshot hooks (throwaway copy only).
++final siteNavKey = GlobalKey<NavigatorState>();
++LedgerController? siteLedger;
++
+ Future<void> main() async {
+   WidgetsFlutterBinding.ensureInitialized();
+   SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
+@@ -38,6 +43,7 @@ class _BudgetAppState extends State<BudgetApp> {
+ 
+   @override
+   void initState() {
++    siteLedger = ledger;
+     super.initState();
+     _boot();
+   }
+@@ -78,6 +84,7 @@ class _BudgetAppState extends State<BudgetApp> {
+         listenable: settings,
+         builder: (context, _) {
+           return MaterialApp(
++            navigatorKey: siteNavKey,
+             title: 'Spend insights',
+             debugShowCheckedModeBanner: false,
+             theme: AppTheme.light(),
