@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kitna: see where your money went</title>
-  <meta name="description" content="Drop in a bank or card statement and Kitna sorts every rupee into categories, right on your Android phone. Compare months, set budgets, find subscriptions. No account, fully offline.">
+  <meta name="description" content="Kitna reads your bank notifications and statements and sorts every rupee into categories, right on your Android phone. Compare months, set budgets, find subscriptions. No account, fully offline.">
   <link rel="canonical" href="https://kitna.datronapps.com/">
   <meta name="theme-color" content="#F7F3EB">
   <link rel="icon" type="image/svg+xml" href="assets/icons/kitna.svg">
@@ -23,6 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Devanagari:wght@500&family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="demos.css">
 
   <script type="application/ld+json">
   {
@@ -59,7 +60,7 @@
     <section class="hero">
       <div class="hero-copy">
         <h1>Kitna gaya?</h1>
-        <p class="lead">How much went, and where. Drop in a bank statement and Kitna sorts every rupee for you, right on your phone.</p>
+        <p class="lead">How much went, and where. Kitna reads your bank notifications and statements and sorts every rupee for you, right on your phone.</p>
         <div class="cta-row">
           <a class="btn play" href="https://play.google.com/store/apps/details?id=com.datron.budjet_spendtracker" data-play>
             <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4.2 2.4 13.6 12l-9.4 9.6a1.6 1.6 0 0 1-.7-1.4V3.8c0-.6.3-1.1.7-1.4Zm10.6 10.8 2.4 2.4-10.9 6.2 8.5-8.6Zm3.8-4.3 2.6 1.5c1 .6 1 2.1 0 2.7l-2.6 1.5-2.7-2.6 2.7-3.1ZM6.3 2.2l10.9 6.2-2.4 2.4-8.5-8.6Z"/></svg>
@@ -82,26 +83,73 @@
 
     <section class="ways" id="ways" aria-labelledby="ways-h">
       <div class="section-head">
-        <h2 id="ways-h">Getting your spends in takes a minute</h2>
-        <p>Use whichever you have. They all end up in one ledger, with duplicates caught for you.</p>
+        <h2 id="ways-h">Set it up once. It keeps itself up to date.</h2>
+        <p>Kitna fills itself from the two places your spending already shows up: your bank's notifications and your statements.</p>
       </div>
-      <ul class="phones-row">
-        <li>
-          <div class="phone"><img src="assets/screenshots/import.webp" alt="Import sheet: Added 692 transactions, everything was categorised." width="515" height="1115" loading="lazy"></div>
-          <h3>Upload a statement</h3>
-          <p>PDF, Excel or CSV from your bank or card. Locked PDFs ask for the password once and never keep it.</p>
-        </li>
-        <li>
-          <div class="phone"><img src="assets/screenshots/alerts.webp" alt="Add data page with automatic bank alerts switched on." width="515" height="1115" loading="lazy"></div>
-          <h3>Let bank alerts flow in</h3>
-          <p>On Android, new UPI, bank and card alerts land in Kitna as they arrive. Nothing to type.</p>
-        </li>
-        <li>
-          <div class="phone"><img src="assets/screenshots/paste-sms.webp" alt="Three bank SMS pasted into the paste box." width="515" height="1115" loading="lazy"></div>
-          <h3>Paste a message</h3>
-          <p>Copy a bank SMS or a table from netbanking, paste it, and it is read like a statement.</p>
-        </li>
-      </ul>
+      <div class="lead-pair">
+        <article class="lead-feature">
+          <div class="demo-wrap">
+            <div class="phone demo-phone"><div class="screen-box" data-demo="notify" role="img" aria-label="Animation: bank notifications from HDFC Bank, Google Pay and PhonePe arrive, and each payment appears in Kitna's list on its own while the monthly total goes up."></div></div>
+          <button class="demo-toggle" type="button" aria-pressed="false">Pause</button>
+          </div>
+          <div class="lead-copy">
+            <h3>Reads your bank notifications</h3>
+            <p>Every time your bank, GPay, PhonePe or Paytm shows a notification for a payment, Kitna reads it and adds the transaction for you. No typing, no forwarding.</p>
+            <p class="aside">Turn it on once and forget it. Works with notifications from 25+ bank and UPI apps, and bank SMS if you allow it.</p>
+          </div>
+        </article>
+        <article class="lead-feature">
+          <div class="demo-wrap">
+            <div class="phone demo-phone"><div class="screen-box" data-demo="statement" role="img" aria-label="Animation: a PDF statement is uploaded, Kitna reads it and reports Added 692 transactions, everything was categorised, then the spending ring appears."></div></div>
+          <button class="demo-toggle" type="button" aria-pressed="false">Pause</button>
+          </div>
+          <div class="lead-copy">
+            <h3>Reads your statements</h3>
+            <p>Upload a PDF, Excel or CSV statement and months of spending are sorted in seconds. HDFC, SBI, ICICI, Axis, Kotak and more.</p>
+            <p class="aside">Locked PDFs ask for the password once and never keep it.</p>
+          </div>
+        </article>
+      </div>
+      <article class="cash-feature">
+        <div class="demo-wrap small">
+          <div class="phone demo-phone"><div class="screen-box" data-demo="cash" role="img" aria-label="Animation: a cash payment of 250 rupees to Taxi, described as Airport drop, filed under Transport at 6 PM, is added and appears at the top of today's list."></div></div>
+          <button class="demo-toggle" type="button" aria-pressed="false">Pause</button>
+        </div>
+        <div class="lead-copy">
+          <h3>Paid in cash? Add it in seconds</h3>
+          <p>For the taxi, the chaiwala or the sabziwala. Amount, who, a short note and roughly when.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="classify" aria-labelledby="classify-h">
+      <div class="classify-top">
+        <div class="demo-wrap">
+          <div class="phone demo-phone"><div class="screen-box" data-demo="classify" role="img" aria-label="Animation: raw bank statement lines turn one by one into clean payments with a category, until 692 of 692 are sorted."></div></div>
+          <button class="demo-toggle" type="button" aria-pressed="false">Pause</button>
+        </div>
+        <div class="feature-copy">
+          <h2 id="classify-h">Sorted for you, automatically</h2>
+          <p>Kitna turns cryptic bank lines into names and categories you recognise. Swiggy is food, Uber is transport, rent is rent. Most months need no sorting at all.</p>
+        </div>
+      </div>
+      <div class="classify-rule">
+        <div class="feature-copy">
+          <h3 class="h-sub">Teach it once</h3>
+          <p>When something lands in Other, tap it, say where it belongs, and every payment like it follows. Rules work like email filters.</p>
+          <div class="rule-demo" aria-label="Example rule">
+            <span class="rd-field">Merchant contains</span>
+            <code>swiggy/zomato</code>
+            <span class="rd-files">files to</span>
+            <span class="rd-cat"><i style="background:#FF6B4A"></i>Food &amp; dining</span>
+          </div>
+          <p class="aside">A slash means either word. Kitna shows what will move before anything changes.</p>
+        </div>
+        <div class="demo-wrap">
+          <div class="phone demo-phone"><div class="screen-box" data-demo="rule" role="img" aria-label="Animation: a rule is typed, merchant contains swiggy/zomato, filed as Food and dining. Saving shows the 4 transactions that will move and the total."></div></div>
+          <button class="demo-toggle" type="button" aria-pressed="false">Pause</button>
+        </div>
+      </div>
     </section>
 
     <section class="feature compare" aria-labelledby="compare-h">
@@ -113,23 +161,6 @@
       <div class="feature-art duo">
         <div class="phone"><img src="assets/screenshots/compare.webp" alt="Compare: August 2026 against July 2026, spend up 15 percent." width="515" height="1115" loading="lazy"></div>
         <div class="phone offset"><img src="assets/screenshots/compare-row.webp" alt="Compare by category, travel and shopping up the most." width="515" height="1115" loading="lazy"></div>
-      </div>
-    </section>
-
-    <section class="feature rules" aria-labelledby="rules-h">
-      <div class="feature-art">
-        <div class="phone"><img src="assets/screenshots/rule-editor.webp" alt="Add a rule: if merchant contains Uber India, file as Transport." width="515" height="1115" loading="lazy"></div>
-      </div>
-      <div class="feature-copy">
-        <h2 id="rules-h">Teach it once</h2>
-        <p>Tap a payment, say where it belongs, and every payment like it follows. Rules work like email filters.</p>
-        <div class="rule-demo" aria-label="Example rule">
-          <span class="rd-field">Merchant contains</span>
-          <code>swiggy/zomato</code>
-          <span class="rd-files">files to</span>
-          <span class="rd-cat"><i style="background:#FF6B4A"></i>Food &amp; dining</span>
-        </div>
-        <p class="aside">A slash means either word. Most payments are sorted before you ever see them.</p>
       </div>
     </section>
 
@@ -197,5 +228,6 @@
   </footer>
 
   <script src="ring.js" defer></script>
+  <script src="demos.js" defer></script>
 </body>
 </html>

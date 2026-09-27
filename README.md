@@ -14,6 +14,7 @@ Plain static HTML and CSS with one small script. No build step, hosted on GitHub
 | `privacy.html` | Privacy policy (also the Play Store privacy URL) |
 | `styles.css` | Whole design system: paper and ink from the app, brand teal for actions, graphite for the privacy band. Unbounded for headlines, IBM Plex Sans for text. |
 | `ring.js` | The interactive category ring in the hero (August from the demo ledger, app category colours) |
+| `demos.js`, `demos.css` | Five live recreations of the app (bank notifications, statement upload, cash entry, automatic sorting, rules). Each is a pure function of its own clock: loops, pauses off screen or on Pause, shows its end state for reduced motion. Copy follows the app's own wording. |
 | `assets/screenshots/*.webp` | App screenshots, 412x892 logical (9:19.5), captured from the Windows build with the demo statement |
 | `assets/og_banner.png` | 1200x630 share image, rendered from `tools/og_banner.html` |
 | `tools/screenshots/` | Everything used to regenerate the screenshots (see below) |
